@@ -1,11 +1,18 @@
 <div class="mt-4">
-    <form method="GET" action="/news">
+    <form method="POST" action="/news">
         <div class="form-group">
             <label for="search-input">Từ khoá</label>
             <input type="text" name="q" class="form-control" id="exampleInputEmail1" placeholder="Nhập từ khoá..">
         </div>
-        
-        <button type="submit" class="btn btn-primary">Tìm kiếm </button>
+        <div class="form-group">
+            <label for="gender-input">Tu khoa</label>
+            <select name="gender" class="form-control" id="gender-input">
+                <option value="">-- Chon gioi tinh --</option>
+                <option value="male">Nam</option>
+                <option value="female">Nu</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Tim kiem </button>
     </form>
 
 </div>
